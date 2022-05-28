@@ -4,6 +4,9 @@
     <head>
         <title>Unit Converter</title>
         <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="index.css" />
         <script src="index.js" defer></script>
     </head>
@@ -16,11 +19,11 @@
                 
                 <h1>Metric/Imperial unit conversion</h1>
                 <input type="text" id="entrada" value="0" />
+                <p id="error"></p>
 
             </div>
 
             <div id="caja2">
-                <p id="error"></p>
 
                 <div class="convert">
                     <h3>Length (Meter/Feet)</h3>
@@ -50,7 +53,7 @@
                     </p>
                 </div>
 
-                <div class="convert">
+                <div class="convert" id="last">
                     <h3>Mass (Kilograms/Pounds)</h3>
                     <p>
                         <span id="kilo">0</span> 
